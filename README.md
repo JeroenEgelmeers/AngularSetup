@@ -38,6 +38,11 @@ npm start
 
 Now browse to the app at [`localhost:8000/index.html`][local-app-url].
 
+It is also possible to start gulp so scss will be on change compiled to CSS. This can be done by:
+
+```
+gulp watch
+```
 
 ## Directory Layout
 
