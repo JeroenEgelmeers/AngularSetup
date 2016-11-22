@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+<head ng-controller="MainController as MC">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{MC.pageTitle}}</title>
+  <meta name="description" content="{{MC.pageDescription}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div ng-include="'templates/header.html'"></div>
+  <div ng-include="'templates/mainNavigation.html'"></div>
+  <div ng-view></div>
+  <div ng-include="'templates/footer.html'"></div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/controllers/main.controller.js"></script>
+</body>
+</html>
